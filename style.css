@@ -1,6 +1,16 @@
 body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100vh;
     margin: 0;
+}
+
+button {
+    background-color: #3882f6;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    padding: 8px 35px;
+    border: 1px solid #3882f6;
 }
 
 .header, .hero, .footer {
@@ -17,6 +27,10 @@ body {
 .header {
     justify-content: space-between;
     padding: 25px 180px;
+}
+
+.header .left {
+    font-size: 24px;
 }
 
 .header ul {
@@ -36,35 +50,116 @@ body {
     color: #e5e7eb;
     display: flex;
     gap: 50px;
-    padding: 25px 180px;
+    padding: 60px 180px 120px;
 }
 
 .hero img {
-    width: 500px;
+    max-width: 500px;
 }
 
 .hero h1 {
     color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800; /* extra-bold*/
+    margin-bottom: 0;
+}
+
+.hero .text {
+    font-size: 18px;
+    margin-top: 0;
 }
 
 .info {
     flex-direction: column;
+    margin: 20px 0 100px;
 }
 
 .info h2 {
     color: #1f2937;
+    font-size: 36px;
+    font-weight: 800; /* extra-bold */
+}
+
+.info .logos-container {
+    display: flex;
+    gap: 50px;
+}
+
+.info .logo-item {
+    width: 170px;
 }
 
 .info img {
-    width: 200px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.info p {
+    color: #1f2937;
+    text-align: center;
 }
 
 .quote {
     background-color: #e5e7eb;
+    color: #1f2937;
     flex-direction: column;
+    padding: 84px 245px 70px; /* alternatively i could add width to .quote .text and quote .quote-id., i think? */
+}
+
+.quote .text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    max-width: 830px;
+}
+
+.quote .quote-id {
+    font-size: 24px;;
+    font-weight: 700;
+    margin-left: auto;
+    margin-top: 0;
 }
 
 .cta {
+    color: #f9faf8;
+    padding: 100px 180px;
 }
+
+.cta .cta-container {
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.cta .text {
+    color: #e5e7eb;
+}
+
+.cta .right {
+    margin-left: auto;
+}
+
+.cta h3,
+.cta p {
+    margin: 0;
+}
+
+.cta button {
+    border: 2px solid #f9faf8;
+}
+
 .footer {
+    color: #e5e7eb;
+    height: 100px;
 }
+
+/*
+Look into how the font works. Should i import roboto instead?
+Could use variable for the colors
+Make display: flex utility?
+I don't think i knw that body has a margin by default ie, user agent style sheet
+I didn't make body flex. Check if the footer is different if i delete sections, will the footer break?
+ */
