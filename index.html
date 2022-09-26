@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="./style.css">
     </head>
 
-    <body>
-        <div class="header">
+    <body class="flex-display-column">
+        <div class="header flex-display">
             <div class="left">
                 Header logo
             </div>
             <div class="right">
-                <ul>
+                <ul class="flex-display">
                     <li>
                         <a href="">
                             header link one
@@ -32,7 +32,7 @@
             </div>
         </div>
         
-        <div class="hero">
+        <div class="hero flex-display">
             <div class="left">
                 <h1>Basketball is awesome.</h1>
                 <p class="text">
@@ -46,9 +46,9 @@
             </div>
         </div>
 
-        <div class="info">
+        <div class="info flex-display-column">
             <h2>Professional basketball team logos</h2>
-            <div class="logos-container">
+            <div class="logos-container flex-display">
                 <div class="logo-item">
                     <img src="./images/aces-primary-logo.svg" alt="Las Vegas Aces logo">
                     <p>Soem text about this logo and its centered</p>
@@ -68,13 +68,15 @@
             </div>
         </div>
 
-        <div class="quote">
-            <p class="text">Really, first thing that you have to do in building a championship culture is to set a tone of accountability first and foremost.</p>
-            <p class="quote-id">- Becky Hammon, LV Aces coach</p>
+        <div class="quote flex-display">
+            <div class="full-quote-container flex-display-column">
+                <p class="text">Really, first thing that you have to do in building a championship culture is to set a tone of accountability first and foremost.</p>
+                <p class="quote-id">- Becky Hammon, LV Aces coach</p>
+            </div>
         </div>
 
-        <div class="cta">
-            <div class="cta-container">
+        <div class="cta flex-display">
+            <div class="cta-container flex-display">
                 <div class="left">
                     <h3>Don't miss the latest scores and stats! It's time!</h3>
                     <p class="text">Sign up for the latest basketball news.</p>
@@ -85,7 +87,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer flex-display">
             <p>Copyright &copy; The Odin Project 2022</p>
         </div>
     </body>
